@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <!-- <link rel="manifest" href="favicon/site.webmanifest">-->
+    <meta name="description"
+          content="My name is Mika Hally. I am a Product Management undergraduate student at CODE University of Applied
+          Sciences in Berlin. I am really passionate about building new products from scratch.">
+    <meta name="author" content="Hey there!">
+    <meta content="https://mikahally.com/assets/sharePreview.png" property="og:image">
+    <meta content="https://mikahally.com/assets/sharePreview.png" name="twitter:image">
+    <meta property="og:url" content="mikahally.com">
+    <meta property="og:title" content="Hey there!">
+    <meta property="og:description" content="My name is Mika Hally. I am a Product Management undergraduate student at
+    CODE University of Applied Sciences in Berlin. I am really passionate about building new products from scratch.">
+    <meta name="twitter:title" content="Hey there!">
+    <meta name="twitter:description" content="My name is Mika Hally. I am a Product Management undergraduate student at
+    CODE University of Applied Sciences in Berlin. I am really passionate about building new products from scratch.">
+    <meta name="theme-color" content="#0055ff">
+    <title>Mika Hally: Product Manager - Berlin</title>
+</head>
+<body>
+
+<div class="header-scroll-trigger"></div>
+<nav class="header-container">
+    <div class="hamburger menu">
+        <div class="line line01"></div>
+        <div class="line line02"></div>
+        <div class="line line03"></div>
+    </div>
+    <a href="../"><h2 class="logo-name">Mika Hally</h2></a>
+    <ul class="nav-links">
+        <li><a href="../" class="top-nav-links" id="about">About Me</a></li>
+        <li><a href="../" class="top-nav-links" id="work">Work & Projects</a></li>
+        <li><a href="contact" class="contact-btn" id="contact">Get in touch</a></li>
+    </ul>
+    <a href="contact">
+        <button class="responsive-nav-btn">
+            Get in touch
+        </button>
+    </a>
+</nav>
+
+
+<div class="contact-form">
+    <div class="form-left">
+        <form method="post" action="" name="project-submission" id="contactForm" class="form">
+            <h1 class="contact-headline-responsive">Get in touch</h1>
+            <p>Name* <br></p>
+            <input type="text" name="name" id="name" required><br>
+            <p>E-mail* <br></p>
+            <input type="email" name="email" id="email" required><br>
+            <p>Message*<br></p>
+            <textarea name="message" cols="70" rows="15" id="message" required></textarea>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+    <div class="form-right">
+        <h1 class="contact-headline">Get in touch</h1>
+    </div>
+</div
+
+
+<div class="loader-wrapper">
+    <span class="loader">
+        <span class="loader-inner"></span>
+    </span>
+</div>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="firebase-company.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+

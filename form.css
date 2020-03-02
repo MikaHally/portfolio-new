@@ -1,0 +1,198 @@
+/* -------------------------------------------------- Contact Form -------------------------------------------------- */
+.contact-form {
+    width: 100%;
+}
+
+.form-left {
+    float: left;
+    width: 50%;
+    overflow: auto;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    padding: 16px 16px;
+    border: 1px solid #dddfe5;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline:0;
+}
+
+.form {
+    margin: 150px 20% 40px 20%;
+}
+
+.form p {
+    margin: 25px 0 10px 0;
+    font-weight: 600;
+}
+
+.form a {
+    text-decoration: none;
+}
+
+.form-right {
+    background: linear-gradient(90deg, rgb(0, 85, 255), rgb(0, 153, 255));
+    float: right;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: .75em 1.6em .7em;
+    font-weight: 600;
+    border-radius: 5px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+    transform: translateY(0px);
+    transition: transform 0.44s ease, box-shadow 0.44s ease;
+}
+
+.submit-btn:hover,
+.submit-btn.focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.62);
+}
+
+.contact-headline {
+    position: absolute;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 90px;
+    color: #ffffff;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 0 rgba(43, 42, 53, 0.2);
+}
+
+.contact-headline-responsive {
+    display: none;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: var(--darkgrey);
+}
+
+
+/* -------------------------------------------------- Choose Form -------------------------------------------------- */
+.choose-wrapper {
+    margin: auto 20% auto 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.choose-box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 1px 0px, rgba(0, 0, 0, 0.01) 0px 0px 8px, rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    border: 1px solid rgba(255,255,255,.8);
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    background: linear-gradient(90deg, rgb(0, 85, 255), rgb(0, 153, 255));
+    box-shadow: rgba(0, 85, 255, 0.05) 0px 1px 0px, rgba(0, 85, 255, 0.03) 0px 0px 8px, rgba(0, 85, 255, 0.1) 0px 10px 14px;
+    border-radius: 10px;
+    margin: 0 10%;
+}
+
+.choose-box:hover,
+.choose-box:focus {
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 1px 0px, rgba(0, 0, 0, 0.01) 0px 0px 8px, rgba(0, 0, 0, 0.14) 0px 4px 10px;
+}
+
+.icon-box img {
+    width: 40px;
+}
+
+.choose-box p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.choose-wrapper a {
+    text-decoration: none;
+    color: var(--darkgrey);
+    margin: 20px 0;
+}
+
+/* -------------------------------------------------- Media Query -------------------------------------------------- */
+@media screen and (max-width: 400px) {
+    .choose-box p {
+        font-size: 22px;
+    }
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        min-width: unset;
+        min-height: unset;
+    }
+    .icon-box img {
+        width: 30px;
+    }
+    .choose-box {
+        height: 100px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .choose-wrapper {
+        width: 86%;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form-right {
+        display: none;
+    }
+    .form-left {
+        width: 100%;
+    }
+    .form {
+        width: 86%;
+        margin: 150px auto 40px auto;
+    }
+    .submit-btn {
+        float: right;
+        margin-bottom: 40px;
+    }
+    .contact-headline-responsive {
+        display: block;
+    }
+}
+

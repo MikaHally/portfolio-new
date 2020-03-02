@@ -1,0 +1,29 @@
+#success-container {
+    height: 100vh;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#success-container a {
+    text-decoration: none;
+}
+
+#success-container h1 {
+    margin-bottom: 20px;
+    color: var(--darkgrey);
+}
+
+#success-container p {
+    line-height: 1.6;
+    color: var(--lightgrey);
+}
+
+@media screen and (max-width: 600px) {
+    #success-container {
+        width: 86%;
+    }
+}

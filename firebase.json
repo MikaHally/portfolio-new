@@ -1,0 +1,9 @@
+{
+  "database": {
+    "rules": "ag\t"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
